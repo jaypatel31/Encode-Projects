@@ -225,12 +225,12 @@ body{
 	text-transform: uppercase;
 }
 #s2-head{
-	background-color: #FFFFFF !important;
+	background-color: #f8f9fa !important;
 	color: #575756 !important;
 	text-transform: uppercase;
 }
 #service{
-	background-color: #FFFFFF !important;
+	background-color: #f8f9fa !important;
     overflow: hidden;
 }
 .cud{
@@ -276,18 +276,35 @@ body{
 .cud:first-child:hover{
 	background-color: #182340;
 	color: white;
-
 }
+.cud2:first-child:hover{
+	background-color: #A155BD;
+	color: white;
+}
+
 .cud:nth-child(2):hover{
 	background-color: #29A9E1;
+	color: white;
+}
+.cud2:nth-child(2):hover{
+	background-color: #13BCA8;
 	color: white;
 }
 .cud:nth-child(3):hover{
 	background-color: #A155BD;
 	color: white;
 }
+.cud2:nth-child(3):hover{
+	background-color: #182340;
+	color: white;
+}
+
 .cud:nth-child(4):hover{
 	background-color: #13BCA8;
+	color: white;
+}
+.cud2:nth-child(4):hover{
+	background-color: #A155BD;
 	color: white;
 }
 .cud:hover .card-text{
@@ -374,13 +391,49 @@ i{
 .img-zoom{
 	width:100%;
 }
+.event{
+		margin-right: 0px !important;
+		margin-left: 0px !important;
+}
+.card-title a{
+	font-size: 18px !important;
+	transition: 0.5s ease;
+	text-decoration: none !important;
+}
+.card-title:hover a{
+	color:red !important;
+}
+.event-text{
+	font-size: 15px;
+	color: #858585;
+	margin-bottom: 0px !important;
+}
+.card-img-top{
+	cursor: pointer;
+	transition: 0.5s ease;
+}
+.card-img-top:hover{
+	opacity: 0.8;
+}
+.read-more{
+	font-size: 16px;
+	color:red !important;
+	transition: 0.5s ease;
+	text-decoration: none !important;
+}
+.read-more:hover{
+	color: darkred !important;
+}
+.read-more:hover i{
+	margin-left:5px;
+}
 @media (prefers-reduced-motion: reduce){
 	.carousel-item {
 		transition: transform 2s ease, opacity .5s ease-out;
 	}
 }
 @media only screen and (max-width:825px){
-	.cud{
+	.cud,.event{
 		width:50%;
 		flex: auto !important;
 	}
@@ -406,7 +459,11 @@ i{
 	}
 	.navbar{
 		padding: 8px;
+		position: sticky;
+	    top: 0;
+	    z-index: 1020;
 	}
+
 	.navbar-dark .navbar-nav .nav-link {
 		padding: 8px;
 	}
@@ -448,7 +505,7 @@ i{
 	.display-4{
 		font-size: 2.5rem;
 	}
-	.cud{
+	.cud,.event{
 		width:100%;
 	}
 }
