@@ -84,6 +84,7 @@ h2{
 body{
 	background-color: cadetblue;
 	font-size: 13px;
+	overflow-x: hidden;
 }
 .navbar{
 	padding:0px;
@@ -221,7 +222,8 @@ body{
 }
 #s-head{
 	background-color: #AABF00 !important;
-	
+	padding: 8px !important;
+    padding-bottom: 12px !important;
 	text-transform: uppercase;
 }
 #s2-head{
@@ -246,6 +248,7 @@ body{
 	transition: 0.3s ease;
 	position: relative;
 	height: 320px;
+	border-bottom:3px solid black !important;
 }
 .s-icon{
 	position: absolute;
@@ -262,6 +265,94 @@ body{
 	display: none;
 	color: white !important;
 	transition: 0.3s ease;
+}
+.f-head{
+	color: #a83fe4;
+    display: block;
+    font-size: 18px !important;
+    padding-top: 4px !important;
+    text-transform: uppercase;
+   font-weight: bold;
+}
+.f-head::after{
+	display: block;
+    content: "";
+    width: 70px;
+    height: 5px;
+    background-color: rgba(128, 128, 128, 0.15);
+    margin: 10px 0;
+}
+.f-elem{
+	border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+	padding-bottom: 12px;
+	margin: 0 0 12px 0;
+	font-size: 14px;
+}
+.f-elem a{
+	color:white;
+	text-decoration: none;
+	transition: 0.5s ease;
+}
+.f-elem:hover a{
+	color:#a83fe4;
+}
+.f-icon{
+	color: #6f6f6f;
+	border-right: 1px solid rgba(128, 128, 128, 0.2);
+	padding-right: 5px;
+	font-size: 14px;
+	width: 9%;
+}
+.so-icon{
+	color:#6f6f6f; 
+}
+.so-icon:hover{
+	color:#a83fe4;
+}
+.s-links{
+	color: white;
+	text-transform: none;
+}
+#social-connects{
+	border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+#credits{
+	padding: 10px 0px;
+}
+.cred{
+	padding: 0px 5px;
+}
+.s-links:hover{
+	text-transform: none;
+}
+#wrapper{
+	padding-bottom: 40px;
+	border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+#social-connects{
+	padding:30px 0px;
+}
+.f-a{
+	color:white;
+	padding-left: 5px;
+
+}
+.f-a:hover{
+	color:#a83fe4;
+	text-decoration: none;
+}
+.f-text{
+	padding-left: 5px;
+	color: #6f6f6f;
+	font-size: 14px;
+}
+.about-us{
+	margin-bottom:9px;
+}
+#footer{
+	position: relative;
+    padding: 70px 0 0;
+    background-color: #111111;
 }
 .card-deck{
 	margin-right: 0px !important;
@@ -377,6 +468,31 @@ i{
 	overflow: hidden;
 	
 }
+#back2Top{
+	width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+    right: -50px;
+    background-color: #DDD;
+    color: #555;
+    text-align: center;
+    font-size: 30px;
+	transition:0.5s ease;
+    text-decoration: none;
+}
+#back2Top:hover {
+    background-color: #F2A74B;
+    color: #006937;
+}
 #hamburg{
 	display: none
 }
@@ -421,15 +537,41 @@ i{
 	transition: 0.5s ease;
 	text-decoration: none !important;
 }
+.card-deck .card{
+	border-bottom:3px solid transparent;
+}
+.event:hover{
+	border-bottom-color: #80225F;
+}
 .read-more:hover{
 	color: darkred !important;
 }
 .read-more:hover i{
 	margin-left:5px;
 }
+.display-4{
+		font-size: 3.0rem;
+	}
 @media (prefers-reduced-motion: reduce){
 	.carousel-item {
 		transition: transform 2s ease, opacity .5s ease-out;
+	}
+}
+@media only screen and (max-width: 767px){
+	.f-head{
+		text-align: center;
+		padding-bottom: 15px;
+	}
+	.f-head:after{
+		display: none;
+	}
+	.f-elem,.about-us{
+		text-align: center;
+		margin-right: 30px;
+    	margin-left: 30px;
+	}
+	.f-icon{
+		border: none;
 	}
 }
 @media only screen and (max-width:825px){
@@ -503,7 +645,7 @@ i{
 		display: none;
 	}
 	.display-4{
-		font-size: 2.5rem;
+		font-size: 2.0rem;
 	}
 	.cud,.event{
 		width:100%;
