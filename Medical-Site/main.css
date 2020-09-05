@@ -1,3 +1,6 @@
+ body,html {
+overflow-x:hidden;
+}
 #top-section{
 	padding: 1.5rem 1rem !important;
 	margin:0px;
@@ -82,7 +85,7 @@ h2{
 	color:black;
 }
 body{
-	background-color: cadetblue;
+	background-color:#a83fe4;
 	font-size: 13px;
 	overflow-x: hidden;
 }
@@ -97,12 +100,12 @@ body{
 	border-bottom: 4px solid #F8F9FA;
 }
 #collapsibleNavbar ul li>a:hover,.dropdown:hover{
-	border-bottom: 4px solid #ea7200;
+	border-bottom: 4px solid #a83fe4;
 	color:#F67107 !important;
 	transition:0.7s ease;
 }
 .dropdown:hover>div>a{
-	color:#F67107 !important;
+	color:#a83fe4 !important;
 	transition:0.7s ease
 }
 .navbar-dark .navbar-nav .nav-link,.navbar-brand {
@@ -369,7 +372,7 @@ body{
 	color: white;
 }
 .cud2:first-child:hover{
-	background-color: #A155BD;
+	background-color: orange;
 	color: white;
 }
 
@@ -382,7 +385,7 @@ body{
 	color: white;
 }
 .cud:nth-child(3):hover{
-	background-color: #A155BD;
+	background-color: orange;
 	color: white;
 }
 .cud2:nth-child(3):hover{
@@ -395,7 +398,7 @@ body{
 	color: white;
 }
 .cud2:nth-child(4):hover{
-	background-color: #A155BD;
+	background-color: #29A9E1;
 	color: white;
 }
 .cud:hover .card-text{
@@ -411,6 +414,9 @@ body{
 }
 i{
 	transition: 0.5s ease;	
+}
+.navbar div a i{
+	transition: none;
 }
 .img-cont{
 	position: relative; 
@@ -536,6 +542,29 @@ i{
 	color:red !important;
 	transition: 0.5s ease;
 	text-decoration: none !important;
+   
+}
+.m-head{
+	font-size:24px;
+	color: #a83fe4 !important;
+	padding-bottom: 20px !important;
+	text-transform: uppercase; 
+	 border-bottom: solid 1px #dcdbdb;
+}
+.fht-wrapper{
+	padding-left:10px;
+	padding-right: 10px;
+}
+.fht{
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.fht:hover{
+	opacity: 0.7;
+}
+.fht-image img{
+	width: 100%;
 }
 .card-deck .card{
 	border-bottom:3px solid transparent;
@@ -550,7 +579,7 @@ i{
 	margin-left:5px;
 }
 .display-4{
-		font-size: 3.0rem;
+		font-size: 2.0rem;
 	}
 @media (prefers-reduced-motion: reduce){
 	.carousel-item {
@@ -645,9 +674,12 @@ i{
 		display: none;
 	}
 	.display-4{
-		font-size: 2.0rem;
+		font-size: 1.7rem;
 	}
 	.cud,.event{
 		width:100%;
+	}
+	.card-deck .card {
+		margin: 0px;
 	}
 }
