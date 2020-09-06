@@ -13,7 +13,7 @@ overflow-x:hidden;
 #top-btn{
 	border:1px solid black;
 	font-weight: 700;
-    color: #3e5566;
+    color: #a83fe4;
     padding: 10px 15px;
     text-transform: uppercase;
     cursor: pointer;
@@ -45,8 +45,11 @@ overflow-x:hidden;
 	outline-color: #28a745 !important;
 	
 }
+.navbar{
+	background-color:#2A4F8A !important;
+}
 #top-btn:hover{
-	background-color: #3e5566;
+	background-color: #2A4F8A;
 	color: white;
 	transition: 0.5s ease; 
 }
@@ -78,7 +81,10 @@ h2{
 }
 #smp:hover{
 	border-bottom:none;
-	color: red !important;
+	color: #A83FE4 !important;
+}
+#smp{
+	color: #A83FE4 !important;
 }
 .next{
 	background-color: transparent;
@@ -92,20 +98,22 @@ body{
 .navbar{
 	padding:0px;
 }
-
+.navbar .text-dark{
+	color: white !important;
+}
 .navbar #ham2{
 
 }
 #collapsibleNavbar ul li>a,.dropdown{
-	border-bottom: 4px solid #F8F9FA;
+	border-bottom: 4px solid transparent;
 }
 #collapsibleNavbar ul li>a:hover,.dropdown:hover{
-	border-bottom: 4px solid #a83fe4;
-	color:#F67107 !important;
+	border-bottom: 4px solid #ea7200 !important;
+	color:#a83fe4 !important;
 	transition:0.7s ease;
 }
 .dropdown:hover>div>a{
-	color:#a83fe4 !important;
+	    color: #F67107 !important;
 	transition:0.7s ease
 }
 .navbar-dark .navbar-nav .nav-link,.navbar-brand {
@@ -496,11 +504,12 @@ i{
     text-decoration: none;
 }
 #back2Top:hover {
-    background-color: #F2A74B;
-    color: #006937;
+    background-color: #F8F9FA;
+    color: #a83fe4 !important;
 }
 #hamburg{
-	display: none
+	display: none;
+	color:#A83FE4 !important;
 }
 #ham2{
 	display: none;
@@ -513,6 +522,12 @@ i{
 .img-zoom{
 	width:100%;
 }
+
+ #service h2{
+	background-color:  #2A4F8A;
+	
+}
+
 .event{
 		margin-right: 0px !important;
 		margin-left: 0px !important;
@@ -546,7 +561,7 @@ i{
 }
 .m-head{
 	font-size:24px;
-	color: #a83fe4 !important;
+	color:white !important;
 	padding-bottom: 20px !important;
 	text-transform: uppercase; 
 	 border-bottom: solid 1px #dcdbdb;
@@ -632,6 +647,7 @@ i{
 		padding: 8px;
 		position: sticky;
 	    top: 0;
+	    background-color:#fff !important;
 	    z-index: 1020;
 	}
 
@@ -664,6 +680,10 @@ i{
 		box-shadow: none;
 		display: block;
 	}
+	.small-paddding{
+		padding-left: 15px;
+		padding-right: 15px;	
+	}
 }
 
 @media only screen and (max-width:576px){
@@ -682,4 +702,5 @@ i{
 	.card-deck .card {
 		margin: 0px;
 	}
+
 }
