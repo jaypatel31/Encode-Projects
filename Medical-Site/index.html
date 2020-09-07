@@ -35,7 +35,9 @@
 		</div>
 		</header>
 		<div class="container mt-3">
-	<nav class="navbar navbar-expand-lg bg-light navbar-dark" data-aos="fade-left" data-aos-duration="1000">
+			<div class="aos-fix" data-aos="fade-left" data-aos-duration="1000">
+	<nav class="navbar navbar-expand-lg bg-light navbar-dark" >
+		
 	  <a id="hamburg" class="navbar-brand  float-left" id="logo" href="#">Medical-Info</a>
 	  <div>
 	  	
@@ -196,8 +198,10 @@
         <a class="nav-link text-dark" href="#">Contact Us</a>
       </li>  
 	    </ul>
-	  </div>  
+	  </div>
+	  
 	</nav>
+	</div>  
 	<div class="small-paddding">
 	<main>
 		
@@ -488,6 +492,8 @@
 <script>
 	AOS.init({
   		easing: 'ease-in-out',
+  		mirror: true,
+  		 
 	});
 	function change(){
 		var icon = document.getElementsByClassName('icon');

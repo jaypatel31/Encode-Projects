@@ -1,6 +1,7 @@
  body,html {
 overflow-x:hidden;
 }
+
 #top-section{
 	padding: 1.5rem 1rem !important;
 	margin:0px;
@@ -46,7 +47,7 @@ overflow-x:hidden;
 	
 }
 .navbar{
-	background-color:#2A4F8A !important;
+	background-color:rgba(0,0,0,.8) !important;
 }
 #top-btn:hover{
 	background-color: #2A4F8A;
@@ -525,7 +526,7 @@ i{
 }
 
  #service h2{
-	background-color:  #2A4F8A;
+	background-color: rgba(0,0,0,.8) !important;
 	font-family: Source Sans Pro;
 }
 
@@ -700,6 +701,9 @@ i{
 	.display-4{
 		font-size: 1.7rem;
 	}
+	.m-head{
+		font-size: 22px;
+	}
 	.cud,.event{
 		width:100%;
 	}
@@ -707,4 +711,7 @@ i{
 		margin: 0px;
 	}
 
+}
+.aos-fix[data-aos][data-aos].aos-animate {
+    transform: unset;
 }
