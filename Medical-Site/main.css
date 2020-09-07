@@ -85,6 +85,7 @@ h2{
 }
 #smp{
 	color: #A83FE4 !important;
+	margin-left: 15px;
 }
 .next{
 	background-color: transparent;
@@ -109,7 +110,7 @@ body{
 }
 #collapsibleNavbar ul li>a:hover,.dropdown:hover{
 	border-bottom: 4px solid #ea7200 !important;
-	color:#a83fe4 !important;
+	color:#F67107 !important;
 	transition:0.7s ease;
 }
 .dropdown:hover>div>a{
@@ -259,7 +260,7 @@ body{
 	transition: 0.3s ease;
 	position: relative;
 	height: 320px;
-	border-bottom:3px solid black !important;
+	border-bottom:3px solid #2A4F8A !important;
 }
 .s-icon{
 	position: absolute;
@@ -525,7 +526,7 @@ i{
 
  #service h2{
 	background-color:  #2A4F8A;
-	
+	font-family: Source Sans Pro;
 }
 
 .event{
@@ -585,7 +586,7 @@ i{
 	border-bottom:3px solid transparent;
 }
 .event:hover{
-	border-bottom-color: #80225F;
+	border-bottom-color: #2A4F8A;
 }
 .read-more:hover{
 	color: darkred !important;
@@ -627,6 +628,9 @@ i{
 @media only screen and (max-width:991px){
 	#searchBar form{
 		display: block;
+	}
+	.navbar .text-dark{
+		color:#343a40 !important;
 	}
 	#service{
 		width: 100%;
